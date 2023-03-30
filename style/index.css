@@ -1,0 +1,298 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  min-width: 320px;
+  color: #232020;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1324px;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__contact {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+.hero {
+  min-height: calc(100vh - 65px);
+}
+
+.hero__container {
+  display: flex;
+  gap: 72px;
+  justify-content: space-between;
+  min-height: inherit
+}
+
+.hero__container:after {
+  content: '';
+  flex-grow: 1;
+  background-image: url('../img/girl.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+.hero__contant {
+  max-width: 480px;
+  padding-top: 85px;
+  padding-bottom: 80px;
+}
+
+.hero__title {
+  padding: 0px;
+  margin: 0px;
+}
+
+.hero__title_big {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.2;
+}
+
+.hero__title_small {
+  display: block;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.0;
+}
+
+.hero__description {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  max-width: 380px;
+  margin: 0px;
+}
+
+.hero__button {
+  background-color: #9CEEF9;
+  border: 1px solid #8EECF9;
+  box-shadow: 0px 16px 16px #C2F8FF;
+  padding: 24px 57px;
+  border-radius: 40px;
+  margin-bottom: 107px;
+  font-weight: 700;
+  line-height: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background-color: #8BE3EF;
+}
+
+.button:focus-visible {
+  border: 1px solid #59D7E9;
+}
+
+.hero__list {
+  max-width: 397px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 9px 35px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.hero__list__item {
+  position: relative;
+  padding-left: 12px;
+}
+
+.hero__list__item::before {
+  position: absolute;
+  top: 9.5px;
+  left: 0;
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 50%;
+}
+
+.hero__list__item:nth-child(1)::before {
+  background: #FFC700;
+}
+
+.hero__list__item:nth-child(2)::before {
+  background: #0066FF;
+}
+
+.hero__list__item:nth-child(3)::before {
+  background: #FF0000;
+}
+
+.hero__list__item:nth-child(4)::before {
+  background: #DB00FF;
+}
+
+.hero__list__item:nth-child(5)::before {
+  background: #DE7BAB;
+}
+
+.hero__list__item:nth-child(6)::before {
+  background: #05FF00;
+}
+
+/* .hero__list__item:nth-child(1)::marker {
+  color: #FFC700;
+}
+
+.hero__list__item:nth-child(2)::marker {
+  color: #0066FF;
+}
+
+.hero__list__item:nth-child(3)::marker {
+  color: #FF0000;
+}
+
+.hero__list__item:nth-child(4)::marker {
+  color: #DB00FF;
+}
+
+.hero__list__item:nth-child(5)::marker {
+  color: #DE7BAB;
+}
+
+.hero__list__item:nth-child(6)::marker {
+  color: #05FF00;
+} */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+  .hero__container {
+    gap: 56px;
+  }
+  .hero__contant {
+    max-width: 410px;
+    padding-top: 25px;
+  }
+  .hero__button {
+    margin-bottom: 80px;
+  }
+  .hero__container:after {
+    background-image: url('../img/girl1024.png');
+    background-position: 100% 42px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    max-width: 768px;
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .hero__container {
+    gap: 42px;
+  }
+  .hero__contant {
+    max-width: 280px;
+    padding-top: 15px;
+  }
+  .hero__button {
+    margin-bottom: 40px;
+    padding: 15px 37px;
+  }
+  .hero__title_big {
+    font-size: 30px;
+  }
+  
+  .hero__title_small {
+    font-size: 24px;
+  }
+  .hero__description {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    max-width: 280px;
+  }
+  .hero__list {
+    max-width: 229px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 36px;
+  }
+  .hero__container:after {
+    background-image: url('../img/girl768.png');
+    background-position: 100% 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero__container {
+    gap: 15px;
+  }
+  .header__logo {
+    width: 100px;
+    height: auto;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero__container:after {
+    background-image: url('../img/girl320.png');
+  }
+  .hero__contant {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 320px;
+  }
+  .hero__container {
+    flex-direction: column;
+  }
+  .hero__container:after {
+    background-position: 100% 0%;
+  }
+}
