@@ -104,20 +104,23 @@ img {
   margin: 0px;
 }
 
-.hero__button {
+.button {
   background-color: #9CEEF9;
   border: 1px solid #8EECF9;
   box-shadow: 0px 16px 16px #C2F8FF;
-  padding: 24px 57px;
+  padding: 24px 58px;
   border-radius: 40px;
-  margin-bottom: 107px;
   font-weight: 700;
   line-height: inherit;
   font-size: inherit;
   cursor: pointer;
 }
 
-.hero__button:hover {
+.hero__button {
+  margin-bottom: 107px;
+}
+
+.button:hover {
   background-color: #8BE3EF;
 }
 
@@ -236,9 +239,11 @@ img {
     max-width: 280px;
     padding-top: 15px;
   }
+  .button {
+    padding: 15px 37px;
+  }
   .hero__button {
     margin-bottom: 40px;
-    padding: 15px 37px;
   }
   .hero__title_big {
     font-size: 30px;

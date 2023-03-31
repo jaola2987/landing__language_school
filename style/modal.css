@@ -1,0 +1,149 @@
+.modal__wrapper {
+  display: none;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #000000c9;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow-y: auto;
+}
+
+.open__modal {
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  width: 1180px;
+  height: 462px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  margin: 0 auto;
+  z-index: 10;
+  text-align: center;
+  padding: 50px;
+}
+
+.modal__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.2;
+  max-width: 480px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.modal__description {
+  padding: 0;
+  margin: 0px;
+  line-height: 25px;
+}
+
+.modal__fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  gap: 30px;
+  margin-bottom: 45px;
+  margin-top: 45px;
+}
+
+.modal__lable__wrapper {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.modal__input {
+  width: inherit;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+  height: 60px;
+  outline: none;
+}
+
+.modal__input:focus-visible,
+.modal__input:hover {
+  border: 1px solid #8EECF9;
+}
+
+.modal__lable__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: inherit;
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #9D9D9D;
+}
+
+.modal__close-button:hover {
+  color: #3E3E3E;
+}
+
+@media (max-width: 1200px) {
+  .modal {
+    width: 880px;
+    height: 462px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .modal {
+    width: 680px;
+    height: 570px;
+    padding: 30px 100px 35px 100px;
+  }
+  .modal__title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    max-width: 446px;
+  }
+  .modal__description {
+    line-height: 1.4;
+    font-size: 14px;
+  }
+  .modal__fieldset {
+    margin: 30px 50px 36px 50px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .modal__close-button {
+    top: 25px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .modal {
+    width: 280px;
+    height: 486px;
+    padding: 30px 10px 30px 10px;
+    border-radius: 20px;
+  }
+  .modal__close-button {
+    top: 5px;
+    right: 10px;
+  }
+  .modal__fieldset {
+    margin: 8px 0px 20px 0px;
+    gap: 10px;
+  }
+  .modal__input {
+    height: 40px;
+  }
+  .modal__button {
+    padding: 15px 27px;
+  }
+}
