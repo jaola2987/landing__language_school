@@ -10,8 +10,10 @@
   <!--custom style-->
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/modal.css">
+  <link rel="stylesheet" href="style/services.css">
   <!--custom script-->
-  <script src="script/index.js" defer></script>
+  <script type="module" src="script/index.js" defer></script>
+  <script type="module" src="script/mock.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -33,7 +35,7 @@
     </div>
   </header>
   <main class="hero">
-    <div class="container hero__container">
+    <section class="container hero__container">
       <div class="hero__contant">
         <h1 class="hero__title"><span class="hero__title_big">Online-школа </span><span class="hero__title_small">иностранных языков</span></h1>
       <p class="hero__description">Научиться новому&nbsp;&mdash; легко! Поможем&nbsp;преодолеть языковой барьер уже&nbsp;за&nbsp;3&nbsp;месяца обучения</p>
@@ -47,41 +49,36 @@
         <li class="hero__list__item">Немецкий</li>
       </ul>
       </div>
-    </div>
+    </section>
+    <section class="container services__container">
+    </section>
   </main>
   <div class="modal__wrapper">
     <div class="modal">
       <h2 class="modal__title">Заполните форму и&nbsp;мы&nbsp;свяжемся c&nbsp;вами!</h2>
       <p class="modal__description">Наш специалист перезвонит вам&nbsp;в&nbsp;течении 1 часа</p>
-      <form>
+      <form class="modal__form">
         <fieldset class="modal__fieldset">
           <label class="modal__lable__wrapper">
             <span class="modal__lable__text">Имя</span>
-            <input class="modal__input"/>
+            <input class="modal__input" type="text" name="name"/>
           </label>
           <label class="modal__lable__wrapper">
             <span class="modal__lable__text">Фамилия</span>
-            <input class="modal__input"/>
+            <input class="modal__input" type="text" name="surname"/>
           </label>
           <label class="modal__lable__wrapper">
             <span class="modal__lable__text">Телефон</span>
-            <input class="modal__input"/>
+            <input class="modal__input" type="number" name="phone"/>
           </label>
         </fieldset>
         <button type="submit" class="button modal__button">Записаться на&nbsp;пробный урок</button>
       </form>
-      <span class="modal__close-button">
+      <button class="modal__close-button">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_24_48)">
             <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="currentColor" />
-          </g>
-          <defs>
-            <clipPath id="clip0_24_48">
-              <rect width="24" height="24" fill="white"/>
-            </clipPath>
-          </defs>
         </svg>
-      </span>
+      </button>
     </div>
   </div>
 </body>
