@@ -58,7 +58,7 @@
 .modal__lable__wrapper {
   display: flex;
   gap: 5px;
-  flex-grow: 1;
+  width: 100%;
   align-items: flex-start;
   flex-direction: column;
 }
