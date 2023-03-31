@@ -4,10 +4,8 @@ const modalOpenButton = document.querySelector(".modal__open-button")
 
 modalCloseButton.addEventListener("click", function () {
   modalWindow.classList.remove("open__modal")
-  console.log(modalWindow)
 })
 
 modalOpenButton.addEventListener("click", function () {
   modalWindow.classList.add("open__modal")
-  console.log(modalWindow)
 })
